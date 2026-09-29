@@ -1,0 +1,24 @@
+{
+  "name": "vyora-hindsight-agent",
+  "version": "1.0.0",
+  "description": "Vyora: Adaptive Cognitive Chief of Staff powered by Hindsight Biomimetic Memory System",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node test/test_pipeline.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  },
+  "keywords": [
+    "hindsight",
+    "biomimetic-memory",
+    "ai-agent",
+    "vectorize",
+    "tempr",
+    "chief-of-staff"
+  ],
+  "author": "Vyora Team",
+  "license": "MIT"
+}

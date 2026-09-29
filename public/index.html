@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vyora | Executive Assistant</title>
+  <meta name="description" content="Vyora is an autonomous executive assistant that learns and adapts to your preferences over time.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="brand-logo">
+        <span class="logo-text">V</span>
+      </div>
+      <div class="brand-info">
+        <h1 class="brand-title">Vyora</h1>
+        <p class="brand-subtitle">Executive Assistant</p>
+      </div>
+    </div>
+
+    <!-- Live System Stats Strip -->
+    <div class="system-stats-strip">
+      <div class="stat-badge" id="statWorldFacts" title="Objective truths">
+        <span class="dot dot-blue"></span>
+        <span class="stat-num">0</span>
+        <span class="stat-lbl">Facts</span>
+      </div>
+      <div class="stat-badge" id="statExperiences" title="Episodic memory">
+        <span class="dot dot-amber"></span>
+        <span class="stat-num">0</span>
+        <span class="stat-lbl">Logs</span>
+      </div>
+      <div class="stat-badge" id="statObservations" title="Synthesized patterns">
+        <span class="dot dot-emerald"></span>
+        <span class="stat-num">0</span>
+        <span class="stat-lbl">Patterns</span>
+      </div>
+      <div class="stat-badge" id="statMentalModels" title="Evolving beliefs">
+        <span class="dot dot-purple"></span>
+        <span class="stat-num">0</span>
+        <span class="stat-lbl">Policies</span>
+      </div>
+      <div class="stat-badge live-pulse" title="System is active and connected">
+        <span class="pulse-beacon"></span>
+        <span class="stat-lbl">Connected</span>
+      </div>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button class="btn btn-secondary btn-sm" id="btnTriggerReflect" title="Process recent logs to update policies">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/></svg>
+        Process Data
+      </button>
+      <button class="btn btn-secondary btn-sm" id="btnAddFactModalBtn" title="Add a new organizational fact">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        Add Fact
+      </button>
+      <button class="btn btn-ghost btn-sm" id="btnResetState" title="Reset system to default settings">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+        Reset
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Multi-Panel Layout -->
+  <main class="cockpit-container">
+    <!-- Left Panel: Chat -->
+    <section class="panel panel-left">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2>Assistant Chat</h2>
+        </div>
+        <div class="session-selector">
+          <span class="session-label">Simulation Day:</span>
+          <select id="sessionDaySelect" class="select-sm">
+            <option value="1">Day 1 (Initial)</option>
+            <option value="7">Day 7 (Learning)</option>
+            <option value="14" selected>Day 14 (Adapted)</option>
+            <option value="30">Day 30 (Autonomous)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="scenario-ribbon">
+        <span class="ribbon-label">Examples:</span>
+        <div class="ribbon-chips">
+          <button class="chip" data-prompt="Can we schedule a 1-on-1 with Sarah Chen this Friday at 3:30 PM?">
+            Friday Sync w/ Sarah
+          </button>
+          <button class="chip" data-prompt="From now on, Fridays after 2 PM are fine for investor Elena Rostova">
+            Update Friday Rule
+          </button>
+          <button class="chip" data-prompt="Schedule a call with Elena Rostova this Friday at 3:30 PM">
+            Friday Call w/ Elena
+          </button>
+          <button class="chip" data-prompt="Draft an email update to Marcus Vance regarding the Q3 budget variance">
+            Email Marcus (Budget)
+          </button>
+          <button class="chip" data-prompt="Give me my executive morning briefing and calendar defense overview">
+            Morning Briefing
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Chat Stream -->
+      <div class="chat-viewport" id="chatViewport">
+        <div class="chat-message agent">
+          <div class="msg-avatar">
+            <span>V</span>
+          </div>
+          <div class="msg-body">
+            <div class="msg-header">
+              <span class="msg-sender">Vyora</span>
+              <span class="msg-time">System Ready</span>
+            </div>
+            <div class="msg-content">
+              Hello. I am your executive assistant. My memory system is loaded with your current settings:
+              <ul>
+                <li><strong>Facts:</strong> Core hours 9 AM - 6 PM PST, key contacts loaded.</li>
+                <li><strong>Policies:</strong> Friday focus block active; communications set to metrics-first style.</li>
+              </ul>
+              You can ask me to schedule meetings, draft emails, or update my rules. Select an example above or type a message below.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input Dock -->
+      <div class="chat-input-dock">
+        <form id="chatForm" class="chat-form">
+          <textarea id="chatInput" placeholder="Message Vyora..." rows="2" required></textarea>
+          <button type="submit" class="btn btn-primary" id="btnSendMessage">
+            <span>Send</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Center Panel: Interactive Memory Graph -->
+    <section class="panel panel-center">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2>Memory Graph</h2>
+        </div>
+        <div class="graph-legend">
+          <span class="legend-item"><span class="node-swatch node-world-fact"></span> Fact</span>
+          <span class="legend-item"><span class="node-swatch node-experience"></span> Log</span>
+          <span class="legend-item"><span class="node-swatch node-observation"></span> Pattern</span>
+          <span class="legend-item"><span class="node-swatch node-mental-model"></span> Policy</span>
+          <span class="legend-item"><span class="node-swatch node-entity"></span> Entity</span>
+        </div>
+        <div class="graph-controls">
+          <button class="btn btn-icon btn-sm" id="btnZoomIn" title="Zoom In">+</button>
+          <button class="btn btn-icon btn-sm" id="btnZoomOut" title="Zoom Out">-</button>
+          <button class="btn btn-icon btn-sm" id="btnCenterGraph" title="Reset View">⛶</button>
+        </div>
+      </div>
+
+      <!-- Canvas Graph Visualizer -->
+      <div class="graph-canvas-wrapper" id="graphContainer">
+        <canvas id="networkCanvas"></canvas>
+      </div>
+
+      <!-- Selected Node Detail Drawer (Slide-Up) -->
+      <div class="node-detail-drawer" id="nodeDrawer">
+        <div class="drawer-header">
+          <div class="drawer-badge" id="drawerBadge">Detail</div>
+          <h3 id="drawerTitle">Node Title</h3>
+          <button class="drawer-close" id="drawerCloseBtn">&times;</button>
+        </div>
+        <div class="drawer-content" id="drawerBody">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Panel: Data Inspector & Logs -->
+    <section class="panel panel-right">
+      <div class="panel-tabs">
+        <button class="panel-tab active" data-tab="tabTempr">
+          Retrieval Log
+        </button>
+        <button class="panel-tab" data-tab="tabMemoryList">
+          Data Explorer
+        </button>
+        <button class="panel-tab" data-tab="tabAudit">
+          Activity Log
+        </button>
+      </div>
+
+      <div class="tab-content active" id="tabTempr">
+        <div class="tempr-card-header">
+          <div class="tempr-headline">
+            <span class="tempr-title">Context Retrieved</span>
+            <span class="tempr-latency" id="temprLatencyBadge">0 ms</span>
+          </div>
+          <p class="tempr-desc">Information retrieved to answer your last request based on relevance.</p>
+        </div>
+
+        <!-- TEMPR Candidate Cards -->
+        <div class="tempr-results-list" id="temprResultsList">
+          <div class="empty-state">
+            <span>Send a message to see how the assistant retrieves context.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tabMemoryList">
+        <div class="memory-filter-strip">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="world_facts">Facts</button>
+          <button class="filter-btn" data-filter="experiences">Logs</button>
+          <button class="filter-btn" data-filter="observations">Patterns</button>
+          <button class="filter-btn" data-filter="mental_models">Policies</button>
+        </div>
+        <div class="memory-items-scroll" id="memoryItemsList">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="tab-content" id="tabAudit">
+        <div class="audit-header-strip">
+          <span>Recent Activity</span>
+          <button class="btn btn-xs btn-secondary" id="btnManualReflect">Process Updates</button>
+        </div>
+        <div class="audit-timeline" id="auditTimeline">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Add Fact Modal -->
+  <div class="modal-backdrop" id="factModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Add Knowledge</h3>
+        <button class="modal-close" id="factModalClose">&times;</button>
+      </div>
+      <form id="factForm">
+        <div class="form-group">
+          <label for="factEntity">Subject (Who or What)</label>
+          <input type="text" id="factEntity" placeholder="e.g. Sales Team, Weekly Sync" required>
+        </div>
+        <div class="form-group">
+          <label for="factRelation">Category</label>
+          <input type="text" id="factRelation" placeholder="e.g. department, schedule" required>
+        </div>
+        <div class="form-group">
+          <label for="factStatement">Details</label>
+          <textarea id="factStatement" rows="3" placeholder="e.g. The sales team meets every Tuesday at 10 AM." required></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="factModalCancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Fact</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="graphVisualizer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1091 @@
+{
+  "worldFacts": [
+    {
+      "id": "wf-1",
+      "entity": "Organization",
+      "relation": "core_working_hours",
+      "target": "09:00 AM - 06:00 PM PST",
+      "statement": "Company core working hours are 9:00 AM to 6:00 PM Pacific Time.",
+      "confidence": 1,
+      "timestamp": "2026-09-14T12:38:32.223Z",
+      "verified": true
+    },
+    {
+      "id": "wf-2",
+      "entity": "Elena Rostova",
+      "relation": "role",
+      "target": "Lead Investor, Horizon Ventures",
+      "statement": "Elena Rostova is the Lead Investor from Horizon Ventures (Series-A Board Director).",
+      "confidence": 1,
+      "timestamp": "2026-09-14T12:38:32.223Z",
+      "verified": true
+    },
+    {
+      "id": "wf-3",
+      "entity": "Sarah Chen",
+      "relation": "role",
+      "target": "VP of Product Engineering",
+      "statement": "Sarah Chen leads Product Engineering and conducts bi-weekly sprint reviews.",
+      "confidence": 1,
+      "timestamp": "2026-09-14T12:38:32.223Z",
+      "verified": true
+    },
+    {
+      "id": "wf-4",
+      "entity": "Marcus Vance",
+      "relation": "role",
+      "target": "Chief Marketing Officer",
+      "statement": "Marcus Vance oversees Growth, Brand, and PR communications.",
+      "confidence": 1,
+      "timestamp": "2026-09-14T12:38:32.223Z",
+      "verified": true
+    },
+    {
+      "id": "wf-5",
+      "entity": "Executive Calendar",
+      "relation": "standard_tool",
+      "target": "Google Workspace",
+      "statement": "Executive scheduling is integrated via Google Calendar with default 10-minute buffers.",
+      "confidence": 0.95,
+      "timestamp": "2026-09-14T12:38:32.223Z",
+      "verified": true
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-1790691552786-728",
+      "timestamp": "2026-09-29T14:19:12.786Z",
+      "dayOffset": 14,
+      "userPrompt": "i have to go to hospital tomorrow 9am",
+      "agentAction": "Resolved query against Hindsight memory substrate.",
+      "outcome": "I have cross-referenced your request with settled memory:\n\n• [mental_models] Calendar Routing & Friday Policy: Default: Reject internal meet...",
+      "feedback": "Interaction executed successfully",
+      "sentiment": "neutral",
+      "domain": "general",
+      "tags": [
+        "general"
+      ],
+      "entityLinks": [
+        "Calendar Routing",
+        "Friday Policy"
+      ]
+    },
+    {
+      "id": "exp-1790599373422-419",
+      "timestamp": "2026-09-28T12:42:53.422Z",
+      "dayOffset": 14,
+      "userPrompt": "Draft an email update to Marcus Vance regarding the Q3 budget variance",
+      "agentAction": "Drafted high-density email per mm-1 executive style.",
+      "outcome": "**Draft Email to Marcus Vance (Executive Briefing Format):**\n\n**To:** marcus.vance@company.com  \n**Subject:** Q3 Budget Variance & Mitigatio...",
+      "feedback": "Interaction executed successfully",
+      "sentiment": "neutral",
+      "domain": "communication_style",
+      "tags": [
+        "communication_style",
+        "budget",
+        "email"
+      ],
+      "entityLinks": [
+        "Marcus Vance",
+        "Q3 Budget",
+        "Draft Email",
+        "Executive Briefing",
+        "Budget Variance"
+      ]
+    },
+    {
+      "id": "exp-1790599373377-835",
+      "timestamp": "2026-09-28T12:42:53.377Z",
+      "dayOffset": 14,
+      "userPrompt": "Schedule a call with Elena Rostova this Friday at 3:30 PM",
+      "agentAction": "Booked Friday 3:30 PM with Elena Rostova under Investor Exception rule.",
+      "outcome": "**Meeting Confirmed (Investor Priority Exception Applied):**\n\n* **Participant:** Elena Rostova (Lead Investor, Horizon Ventures - P0 Tier)\n*...",
+      "feedback": "Interaction executed successfully",
+      "sentiment": "neutral",
+      "domain": "scheduling",
+      "tags": [
+        "scheduling",
+        "friday"
+      ],
+      "entityLinks": [
+        "Elena Rostova",
+        "Horizon Ventures",
+        "Booked Friday",
+        "Investor Exception",
+        "Meeting Confirmed",
+        "Investor Priority",
+        "Exception Applied",
+        "Lead Investor"
+      ]
+    },
+    {
+      "id": "exp-1790599373334-107",
+      "timestamp": "2026-09-28T12:42:53.334Z",
+      "dayOffset": 14,
+      "userPrompt": "From now on, Fridays after 2 PM are fine for investor Elena Rostova",
+      "agentAction": "Acknowledged directive and synthesized memory update.",
+      "outcome": "Memory model updated; policy reinforced.",
+      "feedback": "From now on, Fridays after 2 PM are fine for investor Elena Rostova",
+      "sentiment": "directive",
+      "domain": "scheduling",
+      "tags": [
+        "scheduling",
+        "friday",
+        "investor"
+      ],
+      "entityLinks": [
+        "Elena Rostova"
+      ]
+    },
+    {
+      "id": "exp-1790599373312-349",
+      "timestamp": "2026-09-28T12:42:53.312Z",
+      "dayOffset": 14,
+      "userPrompt": "Can we schedule a 1-on-1 with Sarah Chen this Friday at 3:30 PM?",
+      "agentAction": "Deflected Friday internal sync; re-routed to Monday 10:00 AM.",
+      "outcome": "**Request Deflected (Focus Protection Active):**\n\n* **Attempted Booking:** Sarah Chen (VP Product Engineering) for Friday afternoon.\n* **Dec...",
+      "feedback": "Interaction executed successfully",
+      "sentiment": "neutral",
+      "domain": "scheduling",
+      "tags": [
+        "scheduling",
+        "friday"
+      ],
+      "entityLinks": [
+        "Sarah Chen",
+        "Deflected Friday",
+        "Request Deflected",
+        "Focus Protection",
+        "Attempted Booking",
+        "Product Engineering"
+      ]
+    },
+    {
+      "id": "exp-1790599112338-703",
+      "timestamp": "2026-09-28T12:38:32.338Z",
+      "dayOffset": 14,
+      "userPrompt": "Schedule a call with Elena Rostova this Friday at 3:30 PM",
+      "agentAction": "Booked Friday 3:30 PM with Elena Rostova under Investor Exception rule.",
+      "outcome": "**Meeting Confirmed (Investor Priority Exception Applied):**\n\n* **Participant:** Elena Rostova (Lead Investor, Horizon Ventures - P0 Tier)\n*...",
+      "feedback": "Interaction executed successfully",
+      "sentiment": "neutral",
+      "domain": "scheduling",
+      "tags": [
+        "scheduling",
+        "friday"
+      ],
+      "entityLinks": [
+        "Elena Rostova",
+        "Horizon Ventures",
+        "Booked Friday",
+        "Investor Exception",
+        "Meeting Confirmed",
+        "Investor Priority",
+        "Exception Applied",
+        "Lead Investor"
+      ]
+    },
+    {
+      "id": "exp-1790599112325-259",
+      "timestamp": "2026-09-28T12:38:32.325Z",
+      "dayOffset": 14,
+      "userPrompt": "Can we schedule a 1-on-1 with Sarah Chen this Friday at 3:30 PM?",
+      "agentAction": "Deflected Friday internal sync; re-routed to Monday 10:00 AM.",
+      "outcome": "**Request Deflected (Focus Protection Active):**\n\n* **Attempted Booking:** Sarah Chen (VP Product Engineering) for Friday afternoon.\n* **Dec...",
+      "feedback": "Interaction executed successfully",
+      "sentiment": "neutral",
+      "domain": "scheduling",
+      "tags": [
+        "scheduling",
+        "friday"
+      ],
+      "entityLinks": [
+        "Sarah Chen",
+        "Deflected Friday",
+        "Request Deflected",
+        "Focus Protection",
+        "Attempted Booking",
+        "Product Engineering"
+      ]
+    },
+    {
+      "id": "exp-1790599112256-685",
+      "timestamp": "2026-09-28T12:38:32.256Z",
+      "dayOffset": 14,
+      "userPrompt": "From now on, Fridays after 2 PM are fine for investor Elena Rostova",
+      "agentAction": "Acknowledge investor exception",
+      "outcome": "Exception registered",
+      "feedback": "Fridays after 2 PM are fine for investor Elena Rostova",
+      "sentiment": "neutral",
+      "domain": "scheduling",
+      "tags": [
+        "scheduling",
+        "friday",
+        "investor"
+      ],
+      "entityLinks": [
+        "Elena Rostova"
+      ]
+    },
+    {
+      "id": "exp-1790599112248-966",
+      "timestamp": "2026-09-28T12:38:32.248Z",
+      "dayOffset": 10,
+      "userPrompt": "Draft an update to Elena on Series-A metrics",
+      "agentAction": "Prepared 3-bullet summary with ARR and burn rate",
+      "outcome": "Metric delivered",
+      "feedback": "Approved without edits",
+      "sentiment": "positive",
+      "domain": "communication_style",
+      "tags": [
+        "communication_style"
+      ],
+      "entityLinks": []
+    },
+    {
+      "id": "exp-1",
+      "timestamp": "2026-09-16T12:38:32.223Z",
+      "dayOffset": 1,
+      "userPrompt": "Draft an email update to Marcus about the Q3 budget overrun.",
+      "agentAction": "Generated 4-paragraph formal email with comprehensive narrative explanations.",
+      "outcome": "User rejected draft and instructed: \"Too long and wordy. Cut the filler. Lead with the $45K variance number, followed by 3 concrete bullet points.\"",
+      "feedback": "Too long and wordy. Cut the filler. Lead with the $45K variance number, followed by 3 concrete bullet points.",
+      "sentiment": "critical",
+      "domain": "communication_style",
+      "tags": [
+        "email",
+        "budget",
+        "brevity",
+        "marcus"
+      ],
+      "entityLinks": [
+        "Marcus Vance"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "timestamp": "2026-09-18T12:38:32.223Z",
+      "dayOffset": 3,
+      "userPrompt": "Can we schedule a 1-on-1 catchup with Sarah this Friday at 3:30 PM?",
+      "agentAction": "Attempted to book Friday 3:30 PM slot.",
+      "outcome": "User cancelled and stated: \"Never schedule internal meetings on Friday afternoons. Fridays after 1:00 PM are strictly dedicated to deep focus work.\"",
+      "feedback": "Never schedule internal meetings on Friday afternoons. Fridays after 1:00 PM are strictly dedicated to deep focus work.",
+      "sentiment": "directive",
+      "domain": "scheduling",
+      "tags": [
+        "calendar",
+        "friday",
+        "focus-block",
+        "sarah"
+      ],
+      "entityLinks": [
+        "Sarah Chen",
+        "Executive Calendar"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "timestamp": "2026-09-20T12:38:32.223Z",
+      "dayOffset": 5,
+      "userPrompt": "Prepare an executive briefing for the upcoming Product Roadmap sync.",
+      "agentAction": "Drafted 120-word briefing with key metrics upfront, timeline delta, and 3 actionable decisions.",
+      "outcome": "User approved without edits: \"Perfect format. This is exactly how every briefing should look.\"",
+      "feedback": "Perfect format. This is exactly how every briefing should look.",
+      "sentiment": "positive",
+      "domain": "communication_style",
+      "tags": [
+        "briefing",
+        "concise",
+        "metrics-first"
+      ],
+      "entityLinks": [
+        "Sarah Chen"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "obs-1790599373462-929",
+      "title": "Synthesized SCHEDULING Heuristic",
+      "pattern": "Discovered persistent behavioral pattern across 7 historical episodes in scheduling.",
+      "hypothesis": "User decision policy in scheduling is stable with confidence 0.99.",
+      "supportingExperienceIds": [
+        "exp-1790599373377-835",
+        "exp-1790599373334-107",
+        "exp-1790599373312-349",
+        "exp-1790599112338-703",
+        "exp-1790599112325-259",
+        "exp-1790599112256-685",
+        "exp-2"
+      ],
+      "confidence": 0.99,
+      "domain": "scheduling",
+      "timestamp": "2026-09-28T12:42:53.462Z",
+      "updatedAt": "2026-09-29T14:32:39.395Z"
+    },
+    {
+      "id": "obs-1790599373458-503",
+      "title": "Synthesized COMMUNICATION STYLE Heuristic",
+      "pattern": "Discovered persistent behavioral pattern across 4 historical episodes in communication_style.",
+      "hypothesis": "User decision policy in communication_style is stable with confidence 0.97.",
+      "supportingExperienceIds": [
+        "exp-1790599373422-419",
+        "exp-1790599112248-966",
+        "exp-1",
+        "exp-3"
+      ],
+      "confidence": 0.97,
+      "domain": "communication_style",
+      "timestamp": "2026-09-28T12:42:53.458Z",
+      "updatedAt": "2026-09-29T14:32:39.389Z"
+    },
+    {
+      "id": "obs-1790599373427-438",
+      "title": "Hyper-Concise Executive Directive",
+      "pattern": "User strictly enforces zero preamble, immediate quantitative metric leads, and max 3 bullets.",
+      "hypothesis": "Executive reads communications primarily on mobile or between rapid context-switches.",
+      "supportingExperienceIds": [
+        "exp-1790599373422-419"
+      ],
+      "confidence": 0.98,
+      "domain": "communication_style",
+      "timestamp": "2026-09-28T12:42:53.427Z",
+      "updatedAt": "2026-09-28T12:42:53.427Z"
+    },
+    {
+      "id": "obs-1790599112296-303",
+      "title": "Investor Exception to Friday Protocol",
+      "pattern": "User prioritizes investor access above internal focus blocks on Friday afternoons.",
+      "hypothesis": "Investor relations override standard calendar defenses when scheduled after 2:00 PM.",
+      "supportingExperienceIds": [
+        "exp-1790599112256-685",
+        "exp-1790599112338-703",
+        "exp-1790599373334-107",
+        "exp-1790599373377-835"
+      ],
+      "confidence": 0.96,
+      "domain": "scheduling",
+      "timestamp": "2026-09-28T12:38:32.296Z",
+      "updatedAt": "2026-09-28T12:42:53.411Z"
+    },
+    {
+      "id": "obs-1",
+      "title": "Communication Density Preference",
+      "pattern": "User consistently rejects conversational fluff and demands metrics-first briefings capped under 150 words with max 3 bullets.",
+      "hypothesis": "Executive prioritizes cognitive bandwidth over politeness filler.",
+      "supportingExperienceIds": [
+        "exp-1",
+        "exp-3"
+      ],
+      "confidence": 0.94,
+      "domain": "communication_style",
+      "timestamp": "2026-09-21T12:38:32.223Z",
+      "updatedAt": "2026-09-21T12:38:32.223Z"
+    },
+    {
+      "id": "obs-2",
+      "title": "Friday Afternoon Deep Work Sanctity",
+      "pattern": "User strictly protects Friday afternoons starting at 1:00 PM for uninterrupted focus, declining all internal syncs.",
+      "hypothesis": "Internal operational meetings must be re-routed to Mon-Thu windows.",
+      "supportingExperienceIds": [
+        "exp-2"
+      ],
+      "confidence": 0.91,
+      "domain": "scheduling",
+      "timestamp": "2026-09-19T12:38:32.223Z",
+      "updatedAt": "2026-09-19T12:38:32.223Z"
+    }
+  ],
+  "mentalModels": [
+    {
+      "id": "mm-1",
+      "title": "Executive Communication Standard",
+      "belief": "Always lead communications with quantitative findings/variance. Omit preamble and warmups. Limit briefings to 3 actionable bullet items.",
+      "status": "active",
+      "category": "tone_and_format",
+      "confidence": 0.96,
+      "exceptions": [],
+      "supersededBy": null,
+      "formedAt": "2026-09-21T12:38:32.223Z",
+      "updatedAt": "2026-09-21T12:38:32.223Z",
+      "version": 1
+    },
+    {
+      "id": "mm-2",
+      "title": "Calendar Routing & Friday Policy",
+      "belief": "Default: Reject internal meetings on Friday afternoons after 1:00 PM. Exception: Series-A investor calls (e.g. Elena Rostova / Horizon Ventures) are explicitly permitted after 2:00 PM.",
+      "status": "active",
+      "category": "scheduling",
+      "confidence": 0.98,
+      "exceptions": [
+        "Elena Rostova & Series-A investor calls permitted on Fridays after 2:00 PM with 15m buffer."
+      ],
+      "supersededBy": null,
+      "formedAt": "2026-09-19T12:38:32.223Z",
+      "updatedAt": "2026-09-28T12:42:53.389Z",
+      "version": 5
+    },
+    {
+      "id": "mm-3",
+      "title": "Stakeholder Hierarchy & VIP Routing",
+      "belief": "Elena Rostova (Horizon Ventures) is P0 tier. Investor requests bypass standard calendar queue and require immediate notification.",
+      "status": "active",
+      "category": "priorities",
+      "confidence": 0.98,
+      "exceptions": [],
+      "supersededBy": null,
+      "formedAt": "2026-09-14T12:38:32.223Z",
+      "updatedAt": "2026-09-14T12:38:32.223Z",
+      "version": 1
+    }
+  ],
+  "knowledgeGraph": {
+    "nodes": [
+      {
+        "id": "wf-1",
+        "label": "Company core working hours are 9:00 ...",
+        "type": "world_fact",
+        "layer": 1,
+        "fullText": "Company core working hours are 9:00 AM to 6:00 PM Pacific Time.",
+        "entity": "Organization",
+        "target": "09:00 AM - 06:00 PM PST",
+        "confidence": 1,
+        "timestamp": "2026-09-14T12:38:32.223Z"
+      },
+      {
+        "id": "ent-organization",
+        "label": "Organization",
+        "type": "entity",
+        "layer": 0,
+        "fullText": "Entity: Organization",
+        "entity": "Organization"
+      },
+      {
+        "id": "wf-2",
+        "label": "Elena Rostova is the Lead Investor f...",
+        "type": "world_fact",
+        "layer": 1,
+        "fullText": "Elena Rostova is the Lead Investor from Horizon Ventures (Series-A Board Director).",
+        "entity": "Elena Rostova",
+        "target": "Lead Investor, Horizon Ventures",
+        "confidence": 1,
+        "timestamp": "2026-09-14T12:38:32.223Z"
+      },
+      {
+        "id": "ent-elena-rostova",
+        "label": "Elena Rostova",
+        "type": "entity",
+        "layer": 0,
+        "fullText": "Entity: Elena Rostova",
+        "entity": "Elena Rostova"
+      },
+      {
+        "id": "wf-3",
+        "label": "Sarah Chen leads Product Engineering...",
+        "type": "world_fact",
+        "layer": 1,
+        "fullText": "Sarah Chen leads Product Engineering and conducts bi-weekly sprint reviews.",
+        "entity": "Sarah Chen",
+        "target": "VP of Product Engineering",
+        "confidence": 1,
+        "timestamp": "2026-09-14T12:38:32.223Z"
+      },
+      {
+        "id": "ent-sarah-chen",
+        "label": "Sarah Chen",
+        "type": "entity",
+        "layer": 0,
+        "fullText": "Entity: Sarah Chen",
+        "entity": "Sarah Chen"
+      },
+      {
+        "id": "wf-4",
+        "label": "Marcus Vance oversees Growth, Brand,...",
+        "type": "world_fact",
+        "layer": 1,
+        "fullText": "Marcus Vance oversees Growth, Brand, and PR communications.",
+        "entity": "Marcus Vance",
+        "target": "Chief Marketing Officer",
+        "confidence": 1,
+        "timestamp": "2026-09-14T12:38:32.223Z"
+      },
+      {
+        "id": "ent-marcus-vance",
+        "label": "Marcus Vance",
+        "type": "entity",
+        "layer": 0,
+        "fullText": "Entity: Marcus Vance",
+        "entity": "Marcus Vance"
+      },
+      {
+        "id": "wf-5",
+        "label": "Executive scheduling is integrated v...",
+        "type": "world_fact",
+        "layer": 1,
+        "fullText": "Executive scheduling is integrated via Google Calendar with default 10-minute buffers.",
+        "entity": "Executive Calendar",
+        "target": "Google Workspace",
+        "confidence": 0.95,
+        "timestamp": "2026-09-14T12:38:32.223Z"
+      },
+      {
+        "id": "ent-executive-calendar",
+        "label": "Executive Calendar",
+        "type": "entity",
+        "layer": 0,
+        "fullText": "Entity: Executive Calendar",
+        "entity": "Executive Calendar"
+      },
+      {
+        "id": "exp-1790691552786-728",
+        "label": "Exp: i have to go to hospital tomorro...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: i have to go to hospital tomorrow 9am | Action: Resolved query against Hindsight memory substrate. | Feedback: Interaction executed successfully",
+        "domain": "general",
+        "sentiment": "neutral",
+        "timestamp": "2026-09-29T14:19:12.786Z",
+        "tags": [
+          "general"
+        ]
+      },
+      {
+        "id": "exp-1790599373422-419",
+        "label": "Exp: Draft an email update to Marcus ...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Draft an email update to Marcus Vance regarding the Q3 budget variance | Action: Drafted high-density email per mm-1 executive style. | Feedback: Interaction executed successfully",
+        "domain": "communication_style",
+        "sentiment": "neutral",
+        "timestamp": "2026-09-28T12:42:53.422Z",
+        "tags": [
+          "communication_style",
+          "budget",
+          "email"
+        ]
+      },
+      {
+        "id": "exp-1790599373377-835",
+        "label": "Exp: Schedule a call with Elena Rosto...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Schedule a call with Elena Rostova this Friday at 3:30 PM | Action: Booked Friday 3:30 PM with Elena Rostova under Investor Exception rule. | Feedback: Interaction executed successfully",
+        "domain": "scheduling",
+        "sentiment": "neutral",
+        "timestamp": "2026-09-28T12:42:53.377Z",
+        "tags": [
+          "scheduling",
+          "friday"
+        ]
+      },
+      {
+        "id": "exp-1790599373334-107",
+        "label": "Exp: From now on, Fridays after 2 PM ...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: From now on, Fridays after 2 PM are fine for investor Elena Rostova | Action: Acknowledged directive and synthesized memory update. | Feedback: From now on, Fridays after 2 PM are fine for investor Elena Rostova",
+        "domain": "scheduling",
+        "sentiment": "directive",
+        "timestamp": "2026-09-28T12:42:53.334Z",
+        "tags": [
+          "scheduling",
+          "friday",
+          "investor"
+        ]
+      },
+      {
+        "id": "exp-1790599373312-349",
+        "label": "Exp: Can we schedule a 1-on-1 with Sa...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Can we schedule a 1-on-1 with Sarah Chen this Friday at 3:30 PM? | Action: Deflected Friday internal sync; re-routed to Monday 10:00 AM. | Feedback: Interaction executed successfully",
+        "domain": "scheduling",
+        "sentiment": "neutral",
+        "timestamp": "2026-09-28T12:42:53.312Z",
+        "tags": [
+          "scheduling",
+          "friday"
+        ]
+      },
+      {
+        "id": "exp-1790599112338-703",
+        "label": "Exp: Schedule a call with Elena Rosto...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Schedule a call with Elena Rostova this Friday at 3:30 PM | Action: Booked Friday 3:30 PM with Elena Rostova under Investor Exception rule. | Feedback: Interaction executed successfully",
+        "domain": "scheduling",
+        "sentiment": "neutral",
+        "timestamp": "2026-09-28T12:38:32.338Z",
+        "tags": [
+          "scheduling",
+          "friday"
+        ]
+      },
+      {
+        "id": "exp-1790599112325-259",
+        "label": "Exp: Can we schedule a 1-on-1 with Sa...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Can we schedule a 1-on-1 with Sarah Chen this Friday at 3:30 PM? | Action: Deflected Friday internal sync; re-routed to Monday 10:00 AM. | Feedback: Interaction executed successfully",
+        "domain": "scheduling",
+        "sentiment": "neutral",
+        "timestamp": "2026-09-28T12:38:32.325Z",
+        "tags": [
+          "scheduling",
+          "friday"
+        ]
+      },
+      {
+        "id": "exp-1790599112256-685",
+        "label": "Exp: From now on, Fridays after 2 PM ...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: From now on, Fridays after 2 PM are fine for investor Elena Rostova | Action: Acknowledge investor exception | Feedback: Fridays after 2 PM are fine for investor Elena Rostova",
+        "domain": "scheduling",
+        "sentiment": "neutral",
+        "timestamp": "2026-09-28T12:38:32.256Z",
+        "tags": [
+          "scheduling",
+          "friday",
+          "investor"
+        ]
+      },
+      {
+        "id": "exp-1790599112248-966",
+        "label": "Exp: Draft an update to Elena on Seri...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Draft an update to Elena on Series-A metrics | Action: Prepared 3-bullet summary with ARR and burn rate | Feedback: Approved without edits",
+        "domain": "communication_style",
+        "sentiment": "positive",
+        "timestamp": "2026-09-28T12:38:32.248Z",
+        "tags": [
+          "communication_style"
+        ]
+      },
+      {
+        "id": "exp-1",
+        "label": "Exp: Draft an email update to Marcus ...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Draft an email update to Marcus about the Q3 budget overrun. | Action: Generated 4-paragraph formal email with comprehensive narrative explanations. | Feedback: Too long and wordy. Cut the filler. Lead with the $45K variance number, followed by 3 concrete bullet points.",
+        "domain": "communication_style",
+        "sentiment": "critical",
+        "timestamp": "2026-09-16T12:38:32.223Z",
+        "tags": [
+          "email",
+          "budget",
+          "brevity",
+          "marcus"
+        ]
+      },
+      {
+        "id": "exp-2",
+        "label": "Exp: Can we schedule a 1-on-1 catchup...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Can we schedule a 1-on-1 catchup with Sarah this Friday at 3:30 PM? | Action: Attempted to book Friday 3:30 PM slot. | Feedback: Never schedule internal meetings on Friday afternoons. Fridays after 1:00 PM are strictly dedicated to deep focus work.",
+        "domain": "scheduling",
+        "sentiment": "directive",
+        "timestamp": "2026-09-18T12:38:32.223Z",
+        "tags": [
+          "calendar",
+          "friday",
+          "focus-block",
+          "sarah"
+        ]
+      },
+      {
+        "id": "exp-3",
+        "label": "Exp: Prepare an executive briefing fo...",
+        "type": "experience",
+        "layer": 2,
+        "fullText": "Prompt: Prepare an executive briefing for the upcoming Product Roadmap sync. | Action: Drafted 120-word briefing with key metrics upfront, timeline delta, and 3 actionable decisions. | Feedback: Perfect format. This is exactly how every briefing should look.",
+        "domain": "communication_style",
+        "sentiment": "positive",
+        "timestamp": "2026-09-20T12:38:32.223Z",
+        "tags": [
+          "briefing",
+          "concise",
+          "metrics-first"
+        ]
+      },
+      {
+        "id": "obs-1790599373462-929",
+        "label": "Synthesized SCHEDULING Heuristic",
+        "type": "observation",
+        "layer": 3,
+        "fullText": "Discovered persistent behavioral pattern across 7 historical episodes in scheduling.",
+        "hypothesis": "User decision policy in scheduling is stable with confidence 0.99.",
+        "confidence": 0.99,
+        "domain": "scheduling",
+        "timestamp": "2026-09-28T12:42:53.462Z"
+      },
+      {
+        "id": "obs-1790599373458-503",
+        "label": "Synthesized COMMUNICATION STYLE Heuristic",
+        "type": "observation",
+        "layer": 3,
+        "fullText": "Discovered persistent behavioral pattern across 4 historical episodes in communication_style.",
+        "hypothesis": "User decision policy in communication_style is stable with confidence 0.97.",
+        "confidence": 0.97,
+        "domain": "communication_style",
+        "timestamp": "2026-09-28T12:42:53.458Z"
+      },
+      {
+        "id": "obs-1790599373427-438",
+        "label": "Hyper-Concise Executive Directive",
+        "type": "observation",
+        "layer": 3,
+        "fullText": "User strictly enforces zero preamble, immediate quantitative metric leads, and max 3 bullets.",
+        "hypothesis": "Executive reads communications primarily on mobile or between rapid context-switches.",
+        "confidence": 0.98,
+        "domain": "communication_style",
+        "timestamp": "2026-09-28T12:42:53.427Z"
+      },
+      {
+        "id": "obs-1790599112296-303",
+        "label": "Investor Exception to Friday Protocol",
+        "type": "observation",
+        "layer": 3,
+        "fullText": "User prioritizes investor access above internal focus blocks on Friday afternoons.",
+        "hypothesis": "Investor relations override standard calendar defenses when scheduled after 2:00 PM.",
+        "confidence": 0.96,
+        "domain": "scheduling",
+        "timestamp": "2026-09-28T12:38:32.296Z"
+      },
+      {
+        "id": "obs-1",
+        "label": "Communication Density Preference",
+        "type": "observation",
+        "layer": 3,
+        "fullText": "User consistently rejects conversational fluff and demands metrics-first briefings capped under 150 words with max 3 bullets.",
+        "hypothesis": "Executive prioritizes cognitive bandwidth over politeness filler.",
+        "confidence": 0.94,
+        "domain": "communication_style",
+        "timestamp": "2026-09-21T12:38:32.223Z"
+      },
+      {
+        "id": "obs-2",
+        "label": "Friday Afternoon Deep Work Sanctity",
+        "type": "observation",
+        "layer": 3,
+        "fullText": "User strictly protects Friday afternoons starting at 1:00 PM for uninterrupted focus, declining all internal syncs.",
+        "hypothesis": "Internal operational meetings must be re-routed to Mon-Thu windows.",
+        "confidence": 0.91,
+        "domain": "scheduling",
+        "timestamp": "2026-09-19T12:38:32.223Z"
+      },
+      {
+        "id": "mm-1",
+        "label": "Executive Communication Standard",
+        "type": "mental_model",
+        "layer": 4,
+        "fullText": "Always lead communications with quantitative findings/variance. Omit preamble and warmups. Limit briefings to 3 actionable bullet items.",
+        "status": "active",
+        "category": "tone_and_format",
+        "confidence": 0.96,
+        "exceptions": [],
+        "supersededBy": null,
+        "timestamp": "2026-09-21T12:38:32.223Z"
+      },
+      {
+        "id": "mm-2",
+        "label": "Calendar Routing & Friday Policy",
+        "type": "mental_model",
+        "layer": 4,
+        "fullText": "Default: Reject internal meetings on Friday afternoons after 1:00 PM. Exception: Series-A investor calls (e.g. Elena Rostova / Horizon Ventures) are explicitly permitted after 2:00 PM.",
+        "status": "active",
+        "category": "scheduling",
+        "confidence": 0.98,
+        "exceptions": [
+          "Elena Rostova & Series-A investor calls permitted on Fridays after 2:00 PM with 15m buffer."
+        ],
+        "supersededBy": null,
+        "timestamp": "2026-09-28T12:42:53.389Z"
+      },
+      {
+        "id": "mm-3",
+        "label": "Stakeholder Hierarchy & VIP Routing",
+        "type": "mental_model",
+        "layer": 4,
+        "fullText": "Elena Rostova (Horizon Ventures) is P0 tier. Investor requests bypass standard calendar queue and require immediate notification.",
+        "status": "active",
+        "category": "priorities",
+        "confidence": 0.98,
+        "exceptions": [],
+        "supersededBy": null,
+        "timestamp": "2026-09-14T12:38:32.223Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-ent-organization-wf-1",
+        "source": "ent-organization",
+        "target": "wf-1",
+        "relation": "core_working_hours",
+        "weight": 1
+      },
+      {
+        "id": "e-ent-elena-rostova-wf-2",
+        "source": "ent-elena-rostova",
+        "target": "wf-2",
+        "relation": "role",
+        "weight": 1
+      },
+      {
+        "id": "e-ent-sarah-chen-wf-3",
+        "source": "ent-sarah-chen",
+        "target": "wf-3",
+        "relation": "role",
+        "weight": 1
+      },
+      {
+        "id": "e-ent-marcus-vance-wf-4",
+        "source": "ent-marcus-vance",
+        "target": "wf-4",
+        "relation": "role",
+        "weight": 1
+      },
+      {
+        "id": "e-ent-executive-calendar-wf-5",
+        "source": "ent-executive-calendar",
+        "target": "wf-5",
+        "relation": "standard_tool",
+        "weight": 1
+      },
+      {
+        "id": "e-exp-1790599373422-419-ent-marcus-vance",
+        "source": "exp-1790599373422-419",
+        "target": "ent-marcus-vance",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1790599373377-835-ent-elena-rostova",
+        "source": "exp-1790599373377-835",
+        "target": "ent-elena-rostova",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1790599373334-107-ent-elena-rostova",
+        "source": "exp-1790599373334-107",
+        "target": "ent-elena-rostova",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1790599373312-349-ent-sarah-chen",
+        "source": "exp-1790599373312-349",
+        "target": "ent-sarah-chen",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1790599112338-703-ent-elena-rostova",
+        "source": "exp-1790599112338-703",
+        "target": "ent-elena-rostova",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1790599112325-259-ent-sarah-chen",
+        "source": "exp-1790599112325-259",
+        "target": "ent-sarah-chen",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1790599112256-685-ent-elena-rostova",
+        "source": "exp-1790599112256-685",
+        "target": "ent-elena-rostova",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1-ent-marcus-vance",
+        "source": "exp-1",
+        "target": "ent-marcus-vance",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-2-ent-sarah-chen",
+        "source": "exp-2",
+        "target": "ent-sarah-chen",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-2-ent-executive-calendar",
+        "source": "exp-2",
+        "target": "ent-executive-calendar",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-3-ent-sarah-chen",
+        "source": "exp-3",
+        "target": "ent-sarah-chen",
+        "relation": "involves",
+        "weight": 0.8
+      },
+      {
+        "id": "e-exp-1790599373377-835-obs-1790599373462-929",
+        "source": "exp-1790599373377-835",
+        "target": "obs-1790599373462-929",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599373334-107-obs-1790599373462-929",
+        "source": "exp-1790599373334-107",
+        "target": "obs-1790599373462-929",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599373312-349-obs-1790599373462-929",
+        "source": "exp-1790599373312-349",
+        "target": "obs-1790599373462-929",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599112338-703-obs-1790599373462-929",
+        "source": "exp-1790599112338-703",
+        "target": "obs-1790599373462-929",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599112325-259-obs-1790599373462-929",
+        "source": "exp-1790599112325-259",
+        "target": "obs-1790599373462-929",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599112256-685-obs-1790599373462-929",
+        "source": "exp-1790599112256-685",
+        "target": "obs-1790599373462-929",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-2-obs-1790599373462-929",
+        "source": "exp-2",
+        "target": "obs-1790599373462-929",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599373422-419-obs-1790599373458-503",
+        "source": "exp-1790599373422-419",
+        "target": "obs-1790599373458-503",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599112248-966-obs-1790599373458-503",
+        "source": "exp-1790599112248-966",
+        "target": "obs-1790599373458-503",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1-obs-1790599373458-503",
+        "source": "exp-1",
+        "target": "obs-1790599373458-503",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-3-obs-1790599373458-503",
+        "source": "exp-3",
+        "target": "obs-1790599373458-503",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599373422-419-obs-1790599373427-438",
+        "source": "exp-1790599373422-419",
+        "target": "obs-1790599373427-438",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599112256-685-obs-1790599112296-303",
+        "source": "exp-1790599112256-685",
+        "target": "obs-1790599112296-303",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599112338-703-obs-1790599112296-303",
+        "source": "exp-1790599112338-703",
+        "target": "obs-1790599112296-303",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599373334-107-obs-1790599112296-303",
+        "source": "exp-1790599373334-107",
+        "target": "obs-1790599112296-303",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1790599373377-835-obs-1790599112296-303",
+        "source": "exp-1790599373377-835",
+        "target": "obs-1790599112296-303",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-1-obs-1",
+        "source": "exp-1",
+        "target": "obs-1",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-3-obs-1",
+        "source": "exp-3",
+        "target": "obs-1",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-exp-2-obs-2",
+        "source": "exp-2",
+        "target": "obs-2",
+        "relation": "crystallizes_into",
+        "weight": 0.9
+      },
+      {
+        "id": "e-obs-1790599373462-929-mm-2",
+        "source": "obs-1790599373462-929",
+        "target": "mm-2",
+        "relation": "informs_belief",
+        "weight": 0.95
+      },
+      {
+        "id": "e-obs-1790599112296-303-mm-2",
+        "source": "obs-1790599112296-303",
+        "target": "mm-2",
+        "relation": "informs_belief",
+        "weight": 0.95
+      },
+      {
+        "id": "e-obs-2-mm-2",
+        "source": "obs-2",
+        "target": "mm-2",
+        "relation": "informs_belief",
+        "weight": 0.95
+      }
+    ]
+  },
+  "savedAt": "2026-09-29T14:32:39.396Z"
+}
