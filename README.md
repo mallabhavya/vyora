@@ -26,7 +26,7 @@
    - Synthesizes exception rules (e.g. investor exceptions to focus blocks) without corrupting previous history.
 
 4. **Zero-Latency Settled Memory Reads**:
-   - Operational directives and behavioral models are pre-resolved, eliminating expensive multi-turn RAG retrieval loops.
+   - Operational directives and behavioral models which are pre-resolved, eliminating expensive multi-turn RAG retrieval loops.
 
 ---
 
